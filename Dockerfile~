@@ -5,8 +5,7 @@ MAINTAINER "Mike Morris" mike.morris89@gmail.com
 RUN useradd docker \
 	&& mkdir /home/docker \ 
 	&& chown docker:docker /home/docker \
-	&& addgroup docker \ 
-	&& addgroup staff
+	&& addgroup docker 
 ##############################################################
 RUN apt-get update
 RUN apt-get install -y aptitude
