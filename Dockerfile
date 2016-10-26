@@ -24,7 +24,7 @@ RUN aptitude install -y libcurl4-gnutls-dev
 RUN aptitude install -y libssl-dev
 RUN aptitude install -y libxml2-dev
 ##############################################################
-RUN apitude clean
+RUN aptitude clean
 RUN rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 ENV LC_ALL en_US.UTF-8
