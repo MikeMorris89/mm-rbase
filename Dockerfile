@@ -9,6 +9,7 @@ RUN useradd docker \
 ##############################################################
 RUN apt-get update
 RUN apt-get install -y aptitude
+RUN aptitude install -y apt-utils
 RUN aptitude install -y ed
 RUN aptitude install -y less
 RUN aptitude install -y locales
@@ -19,7 +20,7 @@ RUN aptitude install -y fonts-texgyre
 RUN aptitude install -y build-essential
 RUN aptitude install -y git-all
 RUN aptitude install -y libv8-3.14-dev
-RUN aptitude install -y libcurl14-gnutls-dev
+RUN aptitude install -y libcurl4-gnutls-dev
 RUN aptitude install -y libssl-dev
 RUN aptitude install -y libxml2-dev
 ##############################################################
