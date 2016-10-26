@@ -34,8 +34,8 @@ RUN echo "deb http://http.debian.net/debian sid main" > /etc/apt/sources.list.d/
 RUN echo 'APT::Default-Release "testing";' > /etc/apt/apt.conf.d/default
 ##############################################################
 ENV R_BASE_VERSION 3.3.1
-
-RUN apt-get install -y littler
+RUN aptitude update
+RUN aptitude install -y littler
 RUN aptitude install -y r-cran-littler
 RUN aptitude install -y r-base=$(R_BASE_VERSION)
 RUN aptitude install -y r-base-dev=$(R_BASE_VERSION)
